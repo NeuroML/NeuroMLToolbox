@@ -22,7 +22,24 @@ disp(validator.getValidity())
 
 % Test running a LEMS file
 FileResultWriterFactory.initialize();
-SwingDataViewerFactory.initialize(); % Remove for no GUI
+%SwingDataViewerFactory.initialize(); % Uncomment for GUI
 DefaultLogger.initialize();
-Utils.runLemsFile(lems_file, true); % false for no GUI
+Utils.runLemsFile(lems_file, false); % true for GUI
 
+% Hardcoded knowledge of what is output by the above!
+v = load('results/ex5_v.dat');
+t = v(:,1); v = v(:,2);
+mhn = load('results/ex5_vars.dat');
+m = mhn(:,2); h = mhn(:,3); n = mhn(:,4);
+
+figure;
+subplot(1,2,1);
+plot(t, v);
+xlabel('Time');
+ylabel('Membrane potential');
+
+subplot(1,2,2);
+plot(t, m, t, h, t, n);
+legend('m', 'h', 'n');
+xlabel('Time');
+ylabel('Gating variables');
