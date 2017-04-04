@@ -28,7 +28,8 @@ The specific paths will vary on your machine.
 Now restart Matlab and it will know how to find the jNeuroML classes.
 
 You can test that it is working by trying to validate a NeuroML file:
-```
+
+```matlab
 import org.neuroml.model.util.NeuroML2Validator
 file = java.io.File('/full/path/to/model.nml');
 validator = NeuroML2Validator();
