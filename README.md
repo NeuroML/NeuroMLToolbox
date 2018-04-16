@@ -2,9 +2,6 @@
 
 The NeuroML 2 toolbox for MATLAB works by facilitating access to the [Java NeuroML 2 API][jNeuroML] functionality directly within Matlab.
 
-TODO:
-* Add some examples of usage
-
 ## Installation
 
 Install [jNeuroML][] following the instructions at https://github.com/NeuroML/jNeuroML.
@@ -37,5 +34,8 @@ validator.validateWithTests(file);
 disp(validator.getValidity())
 ```
 
+## Examples
+
+There are further examples of usage in [examples/run_examples.m](examples/run_examples.m).
 
 [jNeuroML]: https://github.com/NeuroML/jNeuroML
