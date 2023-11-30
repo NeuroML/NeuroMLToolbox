@@ -44,11 +44,11 @@
         </Display>
     
     
-        <OutputFile id="of0" fileName="results/ex5_v.dat">
+        <OutputFile id="of0" fileName="ex5_v.dat">
             <OutputColumn id="v" quantity="hhpop[0]/v"/> 
         </OutputFile>  
         
-        <OutputFile id="of1" fileName="results/ex5_vars.dat">
+        <OutputFile id="of1" fileName="ex5_vars.dat">
             <OutputColumn id="m" quantity="hhpop[0]/bioPhys1/membraneProperties/NaConductances/NaConductance/m/q"/> 
             <OutputColumn id="h" quantity="hhpop[0]/bioPhys1/membraneProperties/NaConductances/NaConductance/h/q"/> 
             <OutputColumn id="n" quantity="hhpop[0]/bioPhys1/membraneProperties/KConductances/KConductance/n/q"/> 
